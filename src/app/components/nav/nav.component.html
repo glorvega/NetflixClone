@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li class="logo">
+            <img src="{{navInfo.logo.src}}" alt="{{navInfo.logo.alt}}"/>
+        </li>
+        <li *ngFor="let link of navInfo.links" class="links">
+            <a href="{{link.link}}">{{link.text}}</a>
+        </li>
+    </ul>
+</nav>

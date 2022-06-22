@@ -1,0 +1,12 @@
+<section class="header">
+    <h2>{{headerInfo.title}}</h2>
+    <ul>
+        <li *ngFor="let item of headerInfo.gallery" class="movies">
+            <p>{{item.position}}</p>
+            <div class="movie-container">
+                <img src="{{item.src}}" alt="{{item.alt}}">
+            </div>
+            
+        </li>
+    </ul>
+</section>
